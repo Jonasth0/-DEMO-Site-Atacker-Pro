@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Chakra Petch;
+}
+
+:root {
+    --color-01: #FF0000;
+    --color-02: #000;
+}
+
+.container {
+    max-width: 1700px;
+    margin: auto;
+}
+
+.titulo-secao {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+#navigation {
+    background-color: var(--color-02);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+#navigation #logo {
+    width: 200px;
+}
+
+#navigation #menu ul {
+    display: flex;
+}
+
+#navigation .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navigation #menu a {
+    color: white;
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    transition: all 0.5 linear;
+}
+
+#navigation #menu a:hover {
+    background-color: var(--color-01);
+}
+
+#navigation #menu li {
+    list-style: none;
+}
+
+.product {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+}
+
+.product img {
+    height: 400px;
+    margin-bottom: 20px;
+    float: none;
+    padding: 40px;
+}
+
+.product h2 {
+    margin-bottom: 20px;
+}
+
+.product ul {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.product ul li {
+    margin-bottom: 10px;
+}
+
+.product .but {
+    background-color: var(--color-01);
+    display: block;
+    padding: 10px;
+    border-radius: 50px;
+    text-align: center;
+    text-decoration: none;
+    color: #FFF;
+    transition: all 0.3s linear;
+}
+
+.product .but:hover {
+    background-color: var(--color-02);
+}
+
+#rodape {
+    background-color: var(--color-02);
+    text-align: center;
+    color: #FFF;
+    margin-top: 50px;
+    padding: 30px;
+}
+
+#rodape a {
+    color: var(--color-01);
+    text-decoration: none;
+}
+
+#rodape a:hover{
+    text-decoration: underline;
+}
